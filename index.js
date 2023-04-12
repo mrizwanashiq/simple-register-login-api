@@ -17,6 +17,7 @@ app.post("/register", (req, res) => {
 app.post("/login", (req, res) => {
 	const user = req.body;
 	let isFound = false;
+
 	for (let i = 0; i < users.length; i++) {
 		if (user.email == users[i].email && user.password == users[i].password) {
 			isFound = true;
